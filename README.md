@@ -82,19 +82,19 @@ Task fields:
 ## Screenshots
 
 ### Login Page
-![Login](screenshots/login.png)
+![Login](screenshots/Login.png)
 
 ### Register Page
-![Register](screenshots/register.png)
+![Register](screenshots/Register.png)
 
 ### Dashboard
-![Dashboard](screenshots/dashboard.png)
+![Dashboard](screenshots/Dashboard.png)
 
 ### Project List
-![Project List](screenshots/project-list.png)
+![Project List](screenshots/Project-list.png)
 
 ### Project Details
-![Project Details](screenshots/project-details.png)
+![Project Details](screenshots/Project-details.png)
 
 ---
 
