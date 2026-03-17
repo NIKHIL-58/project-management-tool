@@ -1,0 +1,81 @@
+Backend Setup
+1. Navigate to backend
+cd backend
+
+2. Create virtual environment
+Windows
+python -m venv venv
+venv\Scripts\activate
+Mac/Linux
+python3 -m venv venv
+source venv/bin/activate
+
+3. Install dependencies
+pip install -r requirements.txt
+
+4. Create .env file
+MONGO_URI=your_mongodb_connection_string
+DATABASE_NAME=newAppDB
+JWT_SECRET=supersecretkey
+JWT_ALGORITHM=HS256
+ACCESS_TOKEN_EXPIRE_MINUTES=60
+
+5. Run backend
+python -m uvicorn app.main:app --reload
+
+Backend runs at:
+
+http://127.0.0.1:8000
+
+Swagger Docs:
+
+http://127.0.0.1:8000/docs
+
+
+Frontend Setup
+1. Navigate to frontend
+cd frontend
+
+2. Install dependencies
+npm install
+
+3. Run frontend
+npm run dev
+
+Frontend runs at:
+
+http://localhost:5173
+
+Seed Script
+
+Run the seed script to populate demo data:
+
+cd backend
+python -m scripts.seed
+
+This will create:
+
+1 user
+2 projects
+3 tasks per project
+
+API Endpoints
+Auth
+
+POST /api/auth/register
+POST /api/auth/login
+
+Projects
+
+GET /api/projects
+POST /api/projects
+GET /api/projects/{id}
+PUT /api/projects/{id}
+DELETE /api/projects/{id}
+
+Tasks
+
+GET /api/tasks/project/{project_id}
+POST /api/tasks/project/{project_id}
+PUT /api/tasks/{task_id}
+DELETE /api/tasks/{task_id}
