@@ -94,7 +94,7 @@ Task fields:
 ![Project List](screenshots/Project-list.png)
 
 ### Project Details
-![Project Details](screenshots/Project-details.png)
+![Project Details](screenshots/Project.png)
 
 ---
 
