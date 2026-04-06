@@ -29,7 +29,25 @@ Password: Test@123
 
 ### Database
 - MongoDB Atlas / MongoDB
+  
+## Database Models
 
+User:
+- email
+- password (hashed)
+
+Project:
+- title
+- description
+- status
+- user_id (ref → User)
+
+Task:
+- title
+- description
+- status
+- due_date
+- project_id (ref → Project)
 ---
 
 ## Important Note
