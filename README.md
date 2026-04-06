@@ -124,6 +124,7 @@ project-management-tool/
 │   ├── app/
 │   │   ├── core/
 │   │   ├── routes/
+|   |   |-- models/
 │   │   ├── schemas/
 │   │   ├── services/
 │   │   └── main.py
